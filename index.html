@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-3.3.1.js"></script>
+   <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <h1>Get Your Movie Now:</h1>
+    <form id="movies">
+        <div class="form-group">
+         <label for="movies">Select a Movie</label><br>
+         <input type="checkbox" name="movie" id="movietype" value="TheGrinch">The Grinch<br>
+         <input type="checkbox" name="movie" id="movietype" value="SpiderMAn">Amazing Spiderman<br>
+         <input type="checkbox" name="movie" id="movietype" value="Venom"> Venom <br>
+         <input type="checkbox" name="movie" id="movietype" value="Predetor">The Predetor<br>
+         <input type="checkbox" name="movie" id="movietype" value="Overload">Overload<br>
+         <input type="checkbox" name="movie" id="movietype" value="BlackPanther">The Black Panther<br>
+      </div>
+      <div class="form-group">
+        <label for="Date">Pick a Day</label>
+        <input id="Date"  type="date">
+      </div>
+      <div class="form-group">
+       <label for="time">Select a time</label><br>
+       <input type="radio" name="time" id="time" value="8am-10am">8am to 10am<br>
+       <input type="radio" name="time" id="time" value="11am-1pm">11am to 1pm<br>
+       <input type="radio" name="time" id="time" value="2pm-4pm">2pm to 4pm <br>
+       <input type="radio" name="time" id="time" value="5pm-7pm">5pm to 7pm<br>
+       <input type="radio" name="time" id="time" value="8pm-10pm">8pm to 10pm<br>
+       <input type="radio" name="time" id="time" value="11pm-12am">11pm to 12 am<br>
+    </div>
+      <div class="form-group"
+        <label for="age">Insert age</label>
+        <input id="age"  type="text">
+      </div>
+
+        <button type="submit" name="button" class="btn btn-success">Read My Fortune!</button>
+    </form>
+
+    <h2>Movies:</h2>
+    <ul id="yourmovie">
+    </ul>
+  <div class="col-md-6">
+    <div id="show-movie">
+      <p>Movie: <span class="movie-name"></span></p>
+      <p>Time: <span class="time"></span></p>
+      <p>Date <span class="date"></span></p>
+      <p>Age: <span class="age"></span></p>
+      <p>Price <span class="price"></span></p>
+      <div id="buttons">
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
